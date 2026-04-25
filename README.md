@@ -75,6 +75,11 @@ docker ps
 docker-compose down
 ```
 
+5. Para testar se o banco está rodando se conecte manualmente:
+```id="dock05"
+docker exec -it mysql_db mysql -uroot -proot
+```
+
 ---
 
 ## Acesso ao Banco
