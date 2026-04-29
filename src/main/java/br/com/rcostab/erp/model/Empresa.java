@@ -20,7 +20,7 @@ import javax.persistence.TemporalType;
 @Entity
 @Table(name = "empresa")
 public class Empresa implements Serializable {
-	
+
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -94,6 +94,14 @@ public class Empresa implements Serializable {
 
 	public void setRamoAtividade(RamoAtividade ramoAtividade) {
 		this.ramoAtividade = ramoAtividade;
+	}
+	
+	public TipoEmpresa getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoEmpresa tipo) {
+		this.tipo = tipo;
 	}
 	
 	@Override
